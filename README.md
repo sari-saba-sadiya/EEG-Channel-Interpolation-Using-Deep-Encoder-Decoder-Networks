@@ -2,6 +2,10 @@
 
 Code for the paper "EEG Channel Interpolation Using Deep Encoder-decoder Networks", submitted to The 2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2020).
 
+## TODO:
+- Add transfer learning code.
+- Add paper pdf.
+
 ## Contents:
 <pre>
 |-> train:  
