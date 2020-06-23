@@ -20,9 +20,9 @@ import os
 # In[ ]:
 
 
-datasetName = 'ecr_data2_'
-foldBegin = 0
-foldEnd = 8
+datasetName = 'ecr_data_'
+foldBegin = 6
+foldEnd = 9
 
 
 # In[38]:
@@ -37,7 +37,7 @@ hp = np.load('ecr_hyper_parameters.npy', allow_pickle=True)[()]
 
 
 hp['batch_perc'] = 0.01
-hp['num_epochs'] = 100
+hp['num_epochs'] = 400
 
 
 # In[4]:
@@ -78,6 +78,14 @@ def ecr_load_data(index,foldBegin,foldEnd,datasetName):
                         valX.append(broadcast_to_8x8(np.nan_to_num(data[tt], copy=False)))
     return np.array(trnX),np.array(trnY),np.array(valX),np.array(valY)
 
+
+#
+def evaluate_model(X,Y_test,Y_pred):
+    test_loss = []
+    for ii in range(len(X)):
+        x,y = np.argwhere(X[ii][:,:,0]==0)[0]
+        test_loss.append(keras.losses.mean_squared_error(Y_test[ii][x,y], Y_pred[ii][x,y]))
+    return [['NMSE loss'],[np.mean(np.array(test_loss))]]
 
 # In[6]:
 
@@ -152,9 +160,14 @@ valPerf_over_time = []
 
 
 print("(ecr_transfer): evaluating")
+
 #EVALUATE TRAINING SET
 loss = nn.evaluate(xTrn, yTrn, verbose=0)
-valPerf_over_time.append(loss)
+yPred = nn.predict(xTrn,verbose=0)
+[test_names, results] = evaluate_model(xTrn,yTrn, yPred)
+results = np.append(loss,np.array(results))
+
+valPerf_over_time.append(results)
 
 
 # In[31]:
