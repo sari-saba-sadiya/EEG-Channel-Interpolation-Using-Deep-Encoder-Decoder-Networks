@@ -28,3 +28,15 @@ The performance of the trained model (available in `model`) can be further impro
     * `ecr_transfer.py`: The code for transfer learning
     * `run_transfer.sh`
 * `README.txt`: This file.
+
+## Cite
+```
+@INPROCEEDINGS{Sadiya2020,
+  author={Sari Saba-Sadiya and Taushang Liu and Tuka Alhanai and Mohammad Ghassemi},
+  booktitle={2020 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
+  title={EEG Channel Interpolation Using Deep Encoder-decoder Networks}, 
+  year={2020},
+  pages={},
+  doi={}
+}
+```
