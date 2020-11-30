@@ -10,7 +10,7 @@ Code for the paper "EEG Channel Interpolation Using Deep Encoder-decoder Network
 ## Overview:
 The code implemented here can be used to interpolate `poped' EEG channels. Though not restricted to any specific EEG acquisition setup, the encoder-decoder in this particular implementation was trained on data collected using a 500Hz international 10-20 system. The EEG data is first segmented into 16ms and transformed into an 8x8x8 tensor before being piped through the encoder-decoder trained to interpolate missing channels.
 
-<img src='figure/Figure_overview.png'/>
+<img src='figure/architecture.png'/>
 
 ## Transfer learning
 The performance of the trained model (available in `model`) can be further improved using transfer learning on the specific dataset you are using. See `transfer/ecr_transfer.py` for an example.
