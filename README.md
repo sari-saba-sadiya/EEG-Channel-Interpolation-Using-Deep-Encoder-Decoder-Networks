@@ -5,7 +5,7 @@
 [Mohammad Ghassemi](https://ghassemi.xyz/)<sup>1</sup><br>
 <sup>1</sup> Michigan State University <sup>2</sup> New York University Abu Dhabi
 
-Code for the paper "EEG Channel Interpolation Using Deep Encoder-decoder Networks", presented in BIBM-DLB2H'2020.
+Code for the paper ["EEG Channel Interpolation Using Deep Encoder-decoder Networks"](https://arxiv.org/abs/2009.12244), presented in BIBM-DLB2H'2020.
 
 ## Overview:
 The code implemented here can be used to interpolate `poped' EEG channels. Though not restricted to any specific EEG acquisition setup, the encoder-decoder in this particular implementation was trained on data collected using a 500Hz international 10-20 system. The EEG data is first segmented into 16ms and transformed into an 8x8x8 tensor before being piped through the encoder-decoder trained to interpolate missing channels.
