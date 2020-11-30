@@ -12,6 +12,10 @@ The code implemented here can be used to interpolate `poped' EEG channels. Thoug
 
 <img src='figure/architecture.png'/>
 
+## Youtube Demo
+The recorded presentation contains a theoretical part and a demo that starts at 9:40s.
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/jLRZeJg5viM/0.jpg)](https://youtu.be/jLRZeJg5viM?t=580)
+
 ## Transfer learning
 The performance of the trained model (available in `model`) can be further improved using transfer learning on the specific dataset you are using. See `transfer/ecr_transfer.py` for an example.
 
