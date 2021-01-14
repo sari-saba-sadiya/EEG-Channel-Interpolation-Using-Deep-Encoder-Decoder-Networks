@@ -35,12 +35,15 @@ The performance of the trained model (available in `model`) can be further impro
 
 ## Cite
 ```
-@INPROCEEDINGS{Sadiya2020,
-  author={Sari Saba-Sadiya and Taushang Liu and Tuka Alhanai and Mohammad Ghassemi},
+@INPROCEEDINGS{9312979,
+  author={S. {Saba-Sadiya} and T. {Alhanai} and T. {Liu} and M. M. {Ghassemi}},
   booktitle={2020 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
   title={EEG Channel Interpolation Using Deep Encoder-decoder Networks}, 
   year={2020},
-  pages={},
-  doi={}
+  volume={},
+  number={},
+  pages={2432-2439},
+  doi={10.1109/BIBM49941.2020.9312979}
 }
+
 ```
