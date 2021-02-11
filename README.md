@@ -1,6 +1,6 @@
 # EEG Channel Interpolation Using Deep Encoder-decoder Networks
 [Sari Saba-Sadiya](https://cse.msu.edu/~sadiyasa/)<sup>1</sup>,
-[Taushang Liu](https://npal.psy.msu.edu/)<sup>1</sup>,
+[Taosheng Liu](https://npal.psy.msu.edu/)<sup>1</sup>,
 [Tuka Alhanai](https://talhanai.xyz/)<sup>2</sup>,
 [Mohammad Ghassemi](https://ghassemi.xyz/)<sup>1</sup><br>
 <sup>1</sup> Michigan State University <sup>2</sup> New York University Abu Dhabi
